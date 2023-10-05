@@ -155,7 +155,7 @@ video {
 
 .hero-image-box::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0);
   height: 100vh;
   width: 100%;
   position: absolute;
@@ -184,13 +184,13 @@ video {
   letter-spacing: 0.05rem;
   font-weight: bold;
   text-transform: lowercase;
-  color: cornflowerblue;
+  color: rgb(255, 255, 255);
 }
 
 .hero-text {
   font-size: 1rem;
   margin-top: 0.5rem;
-  color: lavender;
+  color: rgb(255, 255, 255);
 }
 
 .hero-button {
@@ -216,6 +216,7 @@ video {
 /*Portfolio gallery styles*/
 .portfolio-container {
   margin: 1rem auto 0 auto;
+  background-color: #fff;
 }
 
 .portfolio-container h1 {
@@ -225,9 +226,9 @@ video {
 
 .portfolio-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 0.5 rem;
-  grid-auto-rows: 300px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 5fr));
+  grid-gap: 1rem;
+  grid-auto-rows: 500px;
 }
 
 .gallery-item {
@@ -343,6 +344,9 @@ video {
   }
   .about-container {
     max-width: 1400px;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 6rem;
+    row-gap: 0;
   }
   .about-text p {
     font-size: 1.5rem;
