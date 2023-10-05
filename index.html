@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
     <title>My Portfolio</title>
   </head>
   <body>
@@ -16,10 +17,54 @@
         <p class="hero-text">
           Project work for Estonian post-punk band Cherry Tobacco
         </p>
+        <p>
+          <a href="#portfolio">
+            <button type="button" class="hero-button">View Portfolio</button>
+          </a>
+        </p>
       </section>
     </header>
 
-    <img src="img/_7050342.JPG" alt="dolores letter" />
-    <img src="img/dolores final.png" alt="dolores cover" />
+    <!-- Begin Portfolio-->
+    <section id="portfolio" class="portfolio-container">
+      <h1>Portfolio</h1>
+      <section class="portfolio-gallery">
+        <div class="gallery-item">
+          <a
+            href="img/_7050342.JPG"
+            class="glightbox"
+            data-glightbox="title: Flower; description: this is the slide description"
+          >
+            <img src="img/dolores final.png" alt="" class="gallery-img"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/DSC_0032.jpg" class="glightbox">
+            <img src="img/DSC_0114.jpg" alt="" class="gallery-img"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/DSC_0278.jpg" class="glightbox">
+            <img src="img/DSC_0792.jpg" alt="" class="gallery-img"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/DSC_0798.jpg" class="glightbox">
+            <img src="img/DSC_0864.jpg" alt="" class="gallery-img"
+          /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/DSC_0981.jpg" class="glightbox">
+            <img src="img/IMG_4712.jpg" alt="" class="gallery-img"
+          /></a>
+        </div>
+      </section>
+    </section>
+    <!-- End portfolio-->
+
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({ loop: true });
+    </script>
   </body>
 </html>
