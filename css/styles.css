@@ -1,18 +1,4 @@
 /*basic styles*/
-html {
-  font-size: 100%;
-  line-height: 1.5rem;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 100%;
-  scroll-behavior: smooth;
-}
-@media (prefers-reduced-motion) {
-  html {
-    scroll-behavior: initial;
-  }
-}
-
 @font-face {
   font-family: "Bagnard";
   src: url("/webfonts/subset-Bagnard.woff")
@@ -21,8 +7,19 @@ html {
   font-style: normal;
   font-display: optional;
 }
-body {
-  font-family: "Bagnard", Tahoma, Geneva, Verdana, sans-serif;
+
+html {
+  font-size: 100%;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  font-family: "Bagnard", sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: initial;
+  }
 }
 
 body {
