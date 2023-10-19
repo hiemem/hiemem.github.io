@@ -12,6 +12,19 @@ html {
     scroll-behavior: initial;
   }
 }
+
+@font-face {
+  font-family: "Bagnard";
+  src: url("/webfonts/subset-Bagnard.woff")
+    url("/webfonts/fa-v4compatibility.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: optional;
+}
+body {
+  font-family: "Bagnard", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -21,6 +34,7 @@ body {
 }
 
 h2 {
+  font-family: Bagnard;
   font-size: 70%;
   font-style: italic;
   font-weight: 700;
