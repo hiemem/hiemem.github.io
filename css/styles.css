@@ -1,23 +1,16 @@
 /*basic styles*/
 @font-face {
-  font-family: "Chillaz";
-  src: url("/webfonts/Britney-Regular.woff")
-    url("/webfonts/Britney-Regular.woff2") format("woff");
+  font-family: "Melodrama";
+  src: url("/webfonts/Kulturë\ Type.otf") format("OpenType");
+  font-display: swap;
 }
-@font-face {
-  font-family: "Kulture";
-  src: url("/webfonts/BespokeStencilVariable-Extrabold.woff")
-    url("/webfonts/BespokeStencilVariable-Extrabold.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: optional;
-}
+
 html {
   font-size: 100%;
   line-height: 1.5rem;
   box-sizing: border-box;
   height: 100%;
-  font-family: "Chillaz", sans-serif, "Kulture";
+  font-family: "Melodrama";
   scroll-behavior: smooth;
 }
 @media (prefers-reduced-motion) {
@@ -36,16 +29,26 @@ body {
 
 h2 {
   font-size: 70%;
-  font-style: italic;
-  font-weight: 700;
-  color: rgb(39, 10, 14);
+  color: rgb(241, 115, 152);
+  text-align: right;
+}
+h3 {
+  font-size: 55%;
+  color: rgb(185, 65, 101);
+  text-align: right;
 }
 
-p3 {
+p2 {
   font-size: 50%;
   font-weight: 400;
-  font-style: oblique;
-  color: rgb(23, 9, 4);
+  color: rgb(75, 10, 4);
+  text-align: left;
+  margin-top: 0px;
+}
+
+p4 {
+  font-size: 50%;
+  margin-top: 0px;
 }
 *,
 *::before,
@@ -210,7 +213,7 @@ video {
   line-height: 2rem;
   letter-spacing: 0.05rem;
   font-weight: bold;
-
+  align-content: center;
   text-transform: lowercase;
   color: rgb(255, 255, 255);
 }
